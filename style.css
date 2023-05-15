@@ -19,11 +19,16 @@ html, body {
   --primary-color: #9356DC;
   --secondary-color: #FF79DA;
   --tertiary-color: #99E2D0;
+  --fourth-color: #eafbff;
+  --fifth-color:#89c8fa;
+  --six-color:#c5e2f8;
+  --seven-color:#d5f0f8;
 }
 
-.header--img {
-  width: 162px;
-  height: 44px;
+/***Header***/
+h1 {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
 }
 
 h3 {
@@ -36,9 +41,23 @@ p {
   font-size: 18px;
 }
 
+button {
+  background: linear-gradient #9356DC 100%, #FF79DA 100%;
+}
+
 .Restaurants img {
   width: 346px;
   height: 231px;
+}
+
+/***Footer***/
+.footer {
+  background-color: #353535;
+}
+.footer .down {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 
