@@ -152,11 +152,21 @@ h1 {
   font-family: "Shrikhand", cursive;
   font-style: italic;
   font-weight: 400;
+  padding: 23px;
 }
 .footer .down {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   font-size: 16px;
+}
+.footer .down a {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 23px;
+}
+.footer .down li {
+  padding-bottom: 7px;
 }
 
 

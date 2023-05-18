@@ -170,11 +170,24 @@ main{
             font-family: $main-font;
             font-style: italic;
             font-weight: 400;
+            padding: 23px;
         }
+
         .down{
             font-family:$secondary-font;
             color: #ffffff;
             font-size: 16px;
+
+            a{
+                color: #ffffff;
+                font-family: $secondary-font;
+                font-size: 16px;
+                padding: 23px;
+            }  
+
+            li{
+                padding-bottom: 7px;
+            }
         }
     }
 
