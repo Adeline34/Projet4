@@ -146,12 +146,14 @@ main{
             flex-wrap: wrap;
             align-items: center;
             gap: 32px;
+            width: 100%;
+            flex-direction: column;
 
             .new{
                 position: relative;
             }
             .new:before{
-                content: "nouveau";
+                content: "Nouveau";
                 position: absolute;
                 height: 29px;
                 width: 80px;
@@ -159,13 +161,13 @@ main{
                 color: #008766;
                 font-size: 14px;
                 font-family: $secondary-font;
+                text-align: center;
+                right: 16px;
+                top: 16px;
+                line-height: 29px;
             }
         }
-    
         .menucard{
-            background: #ffffff;
-            flex-grow: 1;
-            max-width: 100%;
         img{
             object-fit: cover;
             width: 100%;

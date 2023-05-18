@@ -130,12 +130,14 @@ h1 {
   flex-wrap: wrap;
   align-items: center;
   gap: 32px;
+  width: 100%;
+  flex-direction: column;
 }
 .Restaurants .menus .new {
   position: relative;
 }
 .Restaurants .menus .new:before {
-  content: "nouveau";
+  content: "Nouveau";
   position: absolute;
   height: 29px;
   width: 80px;
@@ -143,11 +145,10 @@ h1 {
   color: #008766;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
-}
-.Restaurants .menucard {
-  background: #ffffff;
-  flex-grow: 1;
-  max-width: 100%;
+  text-align: center;
+  right: 16px;
+  top: 16px;
+  line-height: 29px;
 }
 .Restaurants .menucard img {
   object-fit: cover;
