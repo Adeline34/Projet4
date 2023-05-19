@@ -196,6 +196,19 @@ main{
                 right: 16px;
                 top: 2px;
             }
+            .far{
+                color: black;
+            }
+            .fas{
+                color: transparent;
+                background-image: linear-gradient($primary-color,$secondary-color);
+                background-clip: text;
+                -webkit-background-clip: text;
+                opacity: 0;
+            }
+            &:hover .fas{
+                opacity: 1;
+            }
         }
 /***Footer***/
     .footer{
