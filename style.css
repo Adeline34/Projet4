@@ -160,7 +160,7 @@ h1 {
 .card-description {
   position: relative;
 }
-.card-description h3 {
+.card-description a {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   color: black;
