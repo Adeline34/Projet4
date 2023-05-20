@@ -302,22 +302,41 @@ main{
                 padding-top: 42px;
             }
         }
+
+
         .card{
             background-color: #ffffff;
             padding-left: 0px;
+            border-radius: 15px;
 
+            .card-subtitle{
+                display: flex;
+                align-items: flex-end;
+            
+            .price{
+                margin-left: auto;
+                font-weight: 700;
+            }
             h4{
                 font-size: 18px;
                 font-family: $secondary-font;
                 font-style: normal;
-                margin-top: 42px;
+                margin-top: 24px;
+                padding-left: 35px;
             }
+            p{
+                font-family: $secondary-font;
+                font-style: normal;
+                font-size: 15px;
+                padding-left: 35px;
+            }
+}
         }
-        .card-subtitle{
-            font-family: $secondary-font;
-            font-weight: 300;
-            font-size: 15px;
-            padding-left: 14px;
-        }
+           
+   
     }
+
+        
+
+        
 /*# sourceMappingURL=style.css.map */

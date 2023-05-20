@@ -279,18 +279,28 @@ main:hover .fas {
 .entries .card {
   background-color: #ffffff;
   padding-left: 0px;
+  border-radius: 15px;
 }
-.entries .card h4 {
+.entries .card .card-subtitle {
+  display: flex;
+  align-items: flex-end;
+}
+.entries .card .card-subtitle .price {
+  margin-left: auto;
+  font-weight: 700;
+}
+.entries .card .card-subtitle h4 {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  margin-top: 42px;
+  margin-top: 24px;
+  padding-left: 35px;
 }
-.entries .card-subtitle {
+.entries .card .card-subtitle p {
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-style: normal;
   font-size: 15px;
-  padding-left: 14px;
+  padding-left: 35px;
 }
 
 
