@@ -306,7 +306,7 @@ main:hover .fas {
 .entries .card .card-subtitle:hover .icon-check {
   margin-right: 0px;
   width: 59px;
-  height: 59px;
+  height: 69px;
   transition: margin-right 1s;
 }
 .entries .card .card-subtitle h4 {
