@@ -252,6 +252,7 @@ main{
     main{
         padding: 5px;
         position: relative;
+        background-color: #F7f7f7;
         .resto-main{
             margin-top: -44px;
             border-radius: 35px 35px 0 0;
@@ -287,5 +288,36 @@ main{
             opacity: 1;
         }
     }
+    .entries{
+        padding-left: 14px;
+        padding-right: 14px;
 
+        .menu-entries{
+            font-size: 16px;
+            font-family: $secondary-font;
+            font-weight: 300;
+
+            h3{
+                padding-left: 14px;
+                padding-top: 42px;
+            }
+        }
+        .card{
+            background-color: #ffffff;
+            padding-left: 0px;
+
+            h4{
+                font-size: 18px;
+                font-family: $secondary-font;
+                font-style: normal;
+                margin-top: 42px;
+            }
+        }
+        .card-subtitle{
+            font-family: $secondary-font;
+            font-weight: 300;
+            font-size: 15px;
+            padding-left: 14px;
+        }
+    }
 /*# sourceMappingURL=style.css.map */
