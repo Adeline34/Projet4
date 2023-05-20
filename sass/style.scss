@@ -253,6 +253,7 @@ main{
         padding: 5px;
         position: relative;
         background-color: #F7f7f7;
+
         .resto-main{
             margin-top: -44px;
             border-radius: 35px 35px 0 0;
@@ -291,7 +292,7 @@ main{
     .entries{
         padding-left: 14px;
         padding-right: 14px;
-
+        background-color: #F7f7f7;
         .menu-entries{
             font-size: 16px;
             font-family: $secondary-font;
@@ -312,27 +313,48 @@ main{
             .card-subtitle{
                 display: flex;
                 align-items: flex-end;
+                overflow: hidden;
+                box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+                margin-top: 12px;
+                width: 100%;
+                height: 69px;
+                border-radius: 15px 15px 15px 15px;
             
             .price{
                 margin-left: auto;
                 font-weight: 700;
+                padding-right: 30px;
+                padding-bottom: 9px;
+            }
+
+            .icon-check{
+                background-color: $tertiary-color;
+                margin-right: -46px;
+                border-radius: 0px 16px 16px 0px;
+            }
+
+            &:hover .icon-check{
+                margin-right: 0px;
+                width: 59px;
+                height: 59px;
+                transition: margin-right 1s;
             }
             h4{
                 font-size: 18px;
                 font-family: $secondary-font;
                 font-style: normal;
                 margin-top: 24px;
-                padding-left: 35px;
+                padding-left: 20px;
             }
             p{
                 font-family: $secondary-font;
                 font-style: normal;
                 font-size: 15px;
-                padding-left: 35px;
+                padding-left: 20px;
+                padding-bottom: 9px;
             }
 }
         }
-           
    
     }
 
