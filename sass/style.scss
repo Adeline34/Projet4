@@ -18,21 +18,20 @@ $seven-color:#d5f0f8;
     font-family: $secondary-font;
     text-decoration: none;
     list-style: none;
-    padding-left: 0px;
   }
 
 html, body {
     width: 100%;
     height: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0px;
   }
 
 h2{
     font-size: 24px;
     font-family: $secondary-font;
-    margin-top: 26px;
-    margin-top: 105px;
+    margin-top: 23px;
+    padding-bottom: 58px;
+    padding-left: 14px;
     }
 
 main{
@@ -80,6 +79,7 @@ main{
     h2{
         padding-top: 50px;
         margin-top: 1px;
+        margin-bottom: 0px;
     }
 
     p{
@@ -95,7 +95,8 @@ main{
         width: 218px;
         height: 50px;
         color: #ffffff;
-        margin-top: 25px;
+        margin-top: 0px;
+        margin-bottom: 39px;
     }
         .info button:hover{
             opacity: 0.5;
@@ -105,10 +106,13 @@ main{
 /***Main***/
     .fonctionnement{
         counter-reset: numbers;
+        background-color: #ffffff;
         ol{
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 33px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         li{
@@ -127,7 +131,7 @@ main{
                 left: -5px;
             }
 
-            background-color: #F7f7f7;
+            background-color: #F6f6f6;
             padding: 13px 64px;
             border-radius: 20px;
             flex-grow: 1;
@@ -147,8 +151,9 @@ main{
                 right: auto;
                 left: 35px;
                 top: 15px;
+                color: #7e7e7e;
             }
-            .fa-store{
+            .fa-solid:hover{
                 color: $primary-color;
             }
         }
@@ -157,10 +162,10 @@ main{
 
     .Restaurants{
         background-color: #f7f7f7;
+        padding-top: 50px ;
+        margin-top: 50px;
 
         h2{
-            margin-bottom: 30px;
-            margin-top: 30px;
             padding-left: 14px;
         }
 
@@ -174,6 +179,7 @@ main{
 
             .new{
                 position: relative;
+                width: 100%;
             }
             .new:before{
                 content: "Nouveau";
@@ -190,7 +196,10 @@ main{
                 line-height: 29px;
             }
         }
+
+
         .menucard{
+            width: 100%;
         img{
             object-fit: cover;
             width: 100%;
@@ -212,6 +221,9 @@ main{
                 font-size: 17px;
                 font-family: $secondary-font;
                 color: black;
+                margin-bottom: 8px;
+                padding-top: 0px;
+                margin-top: 0px;
             }
             i{
                 font-size: 30px;
@@ -251,6 +263,9 @@ main{
             color: #ffffff;
             font-size: 16px;
 
+            ul{
+                padding-left: 0px;
+            }
             a{
                 color: #ffffff;
                 font-family: $secondary-font;
@@ -276,7 +291,6 @@ main{
     main{
         padding: 5px;
         position: relative;
-        background-color: #F7f7f7;
 
         .resto-main{
             margin-top: -44px;

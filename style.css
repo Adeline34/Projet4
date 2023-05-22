@@ -7,21 +7,20 @@
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   list-style: none;
-  padding-left: 0px;
 }
 
 html, body {
   width: 100%;
   height: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0px;
 }
 
 h2 {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
-  margin-top: 26px;
-  margin-top: 105px;
+  margin-top: 23px;
+  padding-bottom: 58px;
+  padding-left: 14px;
 }
 
 main {
@@ -70,6 +69,7 @@ h1 {
 .info h2 {
   padding-top: 50px;
   margin-top: 1px;
+  margin-bottom: 0px;
 }
 .info p {
   font-size: 18px;
@@ -83,7 +83,8 @@ h1 {
   width: 218px;
   height: 50px;
   color: #ffffff;
-  margin-top: 25px;
+  margin-top: 0px;
+  margin-bottom: 39px;
 }
 
 .info button:hover {
@@ -93,14 +94,17 @@ h1 {
 /***Main***/
 .fonctionnement {
   counter-reset: numbers;
+  background-color: #ffffff;
 }
 .fonctionnement ol {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .fonctionnement li {
-  background-color: #F7f7f7;
+  background-color: #F6f6f6;
   padding: 13px 64px;
   border-radius: 20px;
   flex-grow: 1;
@@ -134,18 +138,19 @@ h1 {
   right: auto;
   left: 35px;
   top: 15px;
+  color: #7e7e7e;
 }
-.fonctionnement li .fa-store {
+.fonctionnement li .fa-solid:hover {
   color: #9356DC;
 }
 
 /***Menus***/
 .Restaurants {
   background-color: #f7f7f7;
+  padding-top: 50px;
+  margin-top: 50px;
 }
 .Restaurants h2 {
-  margin-bottom: 30px;
-  margin-top: 30px;
   padding-left: 14px;
 }
 .Restaurants .menus {
@@ -158,6 +163,7 @@ h1 {
 }
 .Restaurants .menus .new {
   position: relative;
+  width: 100%;
 }
 .Restaurants .menus .new:before {
   content: "Nouveau";
@@ -172,6 +178,9 @@ h1 {
   right: 16px;
   top: 16px;
   line-height: 29px;
+}
+.Restaurants .menucard {
+  width: 100%;
 }
 .Restaurants .menucard img {
   object-fit: cover;
@@ -193,6 +202,9 @@ h1 {
   font-size: 17px;
   font-family: "Roboto", sans-serif;
   color: black;
+  margin-bottom: 8px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 .card-description i {
   font-size: 30px;
@@ -231,6 +243,9 @@ h1 {
   color: #ffffff;
   font-size: 16px;
 }
+.footer .down ul {
+  padding-left: 0px;
+}
 .footer .down a {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -250,7 +265,6 @@ header img {
 main {
   padding: 5px;
   position: relative;
-  background-color: #F7f7f7;
 }
 main .resto-main {
   margin-top: -44px;
