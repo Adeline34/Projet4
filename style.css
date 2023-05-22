@@ -13,11 +13,15 @@
 html, body {
   width: 100%;
   height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h2 {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
+  margin-top: 26px;
+  margin-top: 105px;
 }
 
 main {
@@ -64,6 +68,7 @@ h1 {
 }
 .info h2 {
   padding-top: 50px;
+  margin-top: 26px;
 }
 .info p {
   font-size: 18px;
@@ -78,6 +83,10 @@ h1 {
   height: 50px;
   color: #ffffff;
   margin-top: 25px;
+}
+
+.info button:hover {
+  opacity: 0.5;
 }
 
 /***Main***/
