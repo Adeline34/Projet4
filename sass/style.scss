@@ -333,6 +333,20 @@ main{
             h3{
                 padding-left: 14px;
                 padding-top: 42px;
+                font-weight: 300;
+                font-size: 18px;
+                text-transform: uppercase;
+                position: relative;
+
+                &::after{
+                    content: "";
+                    width: 43px;
+                    top: 66px;
+                    height: 4px;
+                    left: 15px;
+                    background-color: $tertiary-color;
+                    position: absolute;
+                }
             }
         }
 
@@ -401,7 +415,20 @@ main{
             }
 }
 }
-        
+
+/***Order***/
+            .order{
+            button{
+                background: linear-gradient(to top,$primary-color,$secondary-color);
+                border-radius: 25px;
+                color: #ffffff;
+                width: 89px;
+                height: 19px;
+                margin-top: 0px;
+                margin-bottom: 39px;
+                padding:13px 13px 18px 18px ;
+}
+}
     }
 
         

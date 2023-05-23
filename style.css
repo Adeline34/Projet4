@@ -297,6 +297,7 @@ main:hover .fas {
   padding-left: 14px;
   padding-right: 14px;
   background-color: #F7f7f7;
+  /***Order***/
 }
 .entries .menu-entries {
   font-size: 16px;
@@ -306,6 +307,19 @@ main:hover .fas {
 .entries .menu-entries h3 {
   padding-left: 14px;
   padding-top: 42px;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+}
+.entries .menu-entries h3::after {
+  content: "";
+  width: 43px;
+  top: 66px;
+  height: 4px;
+  left: 15px;
+  background-color: #99E2D0;
+  position: absolute;
 }
 .entries .card {
   background-color: #ffffff;
@@ -362,6 +376,16 @@ main:hover .fas {
   padding-left: 20px;
   margin-top: 0px;
   margin-bottom: 10px;
+}
+.entries .order button {
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  border-radius: 25px;
+  color: #ffffff;
+  width: 89px;
+  height: 19px;
+  margin-top: 0px;
+  margin-bottom: 39px;
+  padding: 13px 13px 18px 18px;
 }
 
 
