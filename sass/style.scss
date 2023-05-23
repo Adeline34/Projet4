@@ -75,7 +75,7 @@ main{
     .info{
         text-align: center;
         background-color: #f7f7f7;
-
+ 
     h2{
         padding-top: 30px;
         margin-top: 1px;
@@ -89,20 +89,7 @@ main{
     }
 }
 
-    .info button{
-        background-image: linear-gradient(to top,$primary-color,$secondary-color);
-        border-radius: 25px;
-        border: transparent;
-        width: 218px;
-        height: 50px;
-        color: #ffffff;
-        margin-top: 0px;
-        margin-bottom: 39px;
-    }
 
-        .info button:hover{
-            opacity: 0.5;
-        }
     
 
 /***Main***/
@@ -234,21 +221,21 @@ main{
                 right: 16px;
                 top: 2px;
             }
-            .far{
-                color: black;
-            }
-            .fas{
+
+            .heart{
+            .i{
                 color: transparent;
                 background-image: linear-gradient($primary-color,$secondary-color);
                 background-clip: text;
                 -webkit-background-clip: text;
                 opacity: 0;
-            }
-            &.fas:hover{
-                opacity: 1;
+                transform:translateY(-50%) ;
             }
         }
-        
+         &:hover{
+                opacity: 1;
+            }
+          }
 /***Footer***/
     .footer{
         background-color: #353535;
@@ -375,25 +362,27 @@ main{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                
+
                     .fa-solid{
                         color: $tertiary-color;
                         position: initial;
                         background-color: #ffffff;
                         font-size: 20px;
-                        
                     }
-                }
+                
 
-            &:hover .icon-check{
-                margin-right: 18px;
+            & .icon-check:hover {
                 width: 81px;
                 height: 69px;
                 transition: margin-right 1s;
                 margin-right: -2px;
 
             }
-            
+            }
+            .i{
+                animation: quaterspin 0.5s ease-in-out;
+            }
+
             h4{
                 font-size: 18px;
                 font-family: $secondary-font;
