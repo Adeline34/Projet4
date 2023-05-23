@@ -77,9 +77,10 @@ main{
         background-color: #f7f7f7;
 
     h2{
-        padding-top: 50px;
+        padding-top: 30px;
         margin-top: 1px;
         margin-bottom: 0px;
+        padding-bottom: 15px;
     }
 
     p{
@@ -98,6 +99,7 @@ main{
         margin-top: 0px;
         margin-bottom: 39px;
     }
+
         .info button:hover{
             opacity: 0.5;
         }
@@ -222,8 +224,9 @@ main{
                 font-family: $secondary-font;
                 color: black;
                 margin-bottom: 8px;
-                padding-top: 0px;
+                padding-top: 4px;
                 margin-top: 0px;
+                font-weight: 300;
             }
             i{
                 font-size: 30px;
@@ -241,7 +244,7 @@ main{
                 -webkit-background-clip: text;
                 opacity: 0;
             }
-            &:hover .fas{
+            &.fas:hover{
                 opacity: 1;
             }
         }

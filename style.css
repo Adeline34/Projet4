@@ -67,9 +67,10 @@ h1 {
   background-color: #f7f7f7;
 }
 .info h2 {
-  padding-top: 50px;
+  padding-top: 30px;
   margin-top: 1px;
   margin-bottom: 0px;
+  padding-bottom: 15px;
 }
 .info p {
   font-size: 18px;
@@ -203,8 +204,9 @@ h1 {
   font-family: "Roboto", sans-serif;
   color: black;
   margin-bottom: 8px;
-  padding-top: 0px;
+  padding-top: 4px;
   margin-top: 0px;
+  font-weight: 300;
 }
 .card-description i {
   font-size: 30px;
@@ -222,7 +224,7 @@ h1 {
   -webkit-background-clip: text;
   opacity: 0;
 }
-.card-description:hover .fas {
+.card-description.fas:hover {
   opacity: 1;
 }
 
