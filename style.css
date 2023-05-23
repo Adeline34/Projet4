@@ -341,7 +341,8 @@ main:hover .fas {
   background-color: #ffffff;
   font-size: 20px;
 }
-.entries .card .card-subtitle :hover .icon-check {
+.entries .card .card-subtitle:hover .icon-check {
+  margin-right: 18px;
   width: 81px;
   height: 69px;
   transition: margin-right 1s;
