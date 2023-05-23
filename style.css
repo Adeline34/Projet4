@@ -333,12 +333,11 @@ main:hover .fas {
 .entries .card .card-subtitle .price {
   margin-left: auto;
   font-weight: 700;
-  padding-right: 27px;
-  padding-bottom: 9px;
+  padding-right: 25px;
 }
 .entries .card .card-subtitle .icon-check {
   background-color: #99E2D0;
-  margin-right: -46px;
+  margin-right: -34px;
   border-radius: 0px 16px 16px 0px;
   display: flex;
   align-items: center;
@@ -356,20 +355,22 @@ main:hover .fas {
   width: 81px;
   height: 69px;
   transition: margin-right 1s;
+  margin-right: -2px;
 }
 .entries .card .card-subtitle h4 {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  margin-top: 24px;
   padding-left: 20px;
+  margin-bottom: 0px;
 }
 .entries .card .card-subtitle p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 15px;
   padding-left: 20px;
-  padding-bottom: 9px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 

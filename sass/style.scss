@@ -245,6 +245,7 @@ main{
                 opacity: 1;
             }
         }
+        
 /***Footer***/
     .footer{
         background-color: #353535;
@@ -361,13 +362,12 @@ main{
             .price{
                 margin-left: auto;
                 font-weight: 700;
-                padding-right: 27px;
-                padding-bottom: 9px;
+                padding-right: 25px;
             }
 
             .icon-check{
                 background-color: $tertiary-color;
-                margin-right: -46px;
+                margin-right: -34px;
                 border-radius: 0px 16px 16px 0px;
                 display: flex;
                 align-items: center;
@@ -387,27 +387,28 @@ main{
                 width: 81px;
                 height: 69px;
                 transition: margin-right 1s;
+                margin-right: -2px;
+
             }
             h4{
                 font-size: 18px;
                 font-family: $secondary-font;
                 font-style: normal;
-                margin-top: 24px;
                 padding-left: 20px;
+                margin-bottom: 0px;
             }
             p{
                 font-family: $secondary-font;
                 font-style: normal;
                 font-size: 15px;
                 padding-left: 20px;
-                padding-bottom: 9px;
+                margin-top: 0px;
+                margin-bottom: 10px;
             }
+
 }
         }
-   
     }
-
-        
 
         
 /*# sourceMappingURL=style.css.map */
