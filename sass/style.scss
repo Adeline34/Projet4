@@ -75,6 +75,9 @@ main{
     .info{
         text-align: center;
         background-color: #f7f7f7;
+        padding-bottom: 37px;
+        margin-top: 0;
+        margin-bottom: 30px;
  
     h2{
         padding-top: 30px;
@@ -86,12 +89,22 @@ main{
     p{
         font-size: 18px;
         font-weight: 300;
+        margin-top: 0px;
+    }
+
+    .button{
+        background: linear-gradient(to top,$primary-color,$secondary-color);
+        border-radius: 25px;
+        color: #ffffff;
+        margin-top: 0px;
+        margin-bottom: 39px;
+        padding:13px 13px 18px 18px ;
+    }
+
+    & .button:hover{
+        opacity: 0.5;
     }
 }
-
-
-    
-
 /***Main***/
     .fonctionnement{
         counter-reset: numbers;
@@ -222,16 +235,6 @@ main{
                 top: 2px;
             }
 
-            .heart{
-            .i{
-                color: transparent;
-                background-image: linear-gradient($primary-color,$secondary-color);
-                background-clip: text;
-                -webkit-background-clip: text;
-                opacity: 0;
-                transform:translateY(-50%) ;
-            }
-        }
          &:hover{
                 opacity: 1;
             }
@@ -369,19 +372,16 @@ main{
                         background-color: #ffffff;
                         font-size: 20px;
                     }
-                
+                }
 
-            & .icon-check:hover {
+            & :hover .icon-check{
                 width: 81px;
                 height: 69px;
                 transition: margin-right 1s;
                 margin-right: -2px;
 
             }
-            }
-            .i{
-                animation: quaterspin 0.5s ease-in-out;
-            }
+            
 
             h4{
                 font-size: 18px;
@@ -398,9 +398,9 @@ main{
                 margin-top: 0px;
                 margin-bottom: 10px;
             }
-
 }
-        }
+}
+        
     }
 
         
