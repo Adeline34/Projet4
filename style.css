@@ -250,6 +250,7 @@ h1 {
 }
 
 /***Page menu***/
+/***Header***/
 .header {
   display: flex;
   flex-direction: row;
@@ -279,6 +280,7 @@ h1 {
   padding: 0;
 }
 
+/***Main img top***/
 .img-menu {
   display: flex;
   justify-content: end;
@@ -326,18 +328,13 @@ h1 {
   opacity: 1;
 }
 
+/***Entries***/
 .entries {
   padding-left: 14px;
   padding-right: 14px;
   background-color: #F7f7f7;
-  /***Order***/
 }
-.entries .menu-entries {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-}
-.entries .menu-entries h3 {
+.entries h3 {
   padding-left: 14px;
   padding-top: 42px;
   font-weight: 300;
@@ -346,7 +343,7 @@ h1 {
   position: relative;
   margin-top: 0px;
 }
-.entries .menu-entries h3::after {
+.entries h3::after {
   content: "";
   width: 43px;
   top: 66px;
@@ -355,27 +352,32 @@ h1 {
   background-color: #99E2D0;
   position: absolute;
 }
-.entries .card {
-  background-color: #ffffff;
-  padding-left: 0px;
-  border-radius: 15px;
-}
-.entries .card .card-subtitle {
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  margin-top: 12px;
+
+.card {
+  border-radius: 15px 15px 15px 15px;
   width: 100%;
   height: 69px;
-  border-radius: 15px 15px 15px 15px;
+  background-color: #ffffff;
+  margin-top: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
 }
-.entries .card .card-subtitle .price {
+.card .card-subtitle {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-left: 15px;
+}
+.card .card-subtitle .price {
   margin-left: auto;
   font-weight: 700;
   padding-right: 25px;
 }
-.entries .card .card-subtitle .icon-check {
+.card .card-subtitle .icon-check {
   background-color: #99E2D0;
   margin-right: -34px;
   border-radius: 0px 16px 16px 0px;
@@ -383,35 +385,55 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-.entries .card .card-subtitle .icon-check .fa-solid {
+.card .card-subtitle .icon-check .fa-solid {
   color: #99E2D0;
   position: initial;
   background-color: #ffffff;
   font-size: 20px;
 }
-.entries .card .card-subtitle:hover .icon-check {
+.card .card-subtitle:hover .icon-check {
   margin-right: 18px;
   width: 81px;
   height: 69px;
   transition: margin-right 1s;
   margin-right: -2px;
 }
-.entries .card .card-subtitle h4 {
+.card .card-subtitle h4 {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  padding-left: 20px;
   margin-bottom: 0px;
 }
-.entries .card .card-subtitle p {
+.card .card-subtitle p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 15px;
-  padding-left: 20px;
   margin-top: 0px;
   margin-bottom: 10px;
 }
-.entries .order {
+
+/***Animation***/
+@keyframes gap {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+    height: 0;
+  }
+}
+.animation-1 {
+  animation: gap 2s;
+}
+
+.animation-2 {
+  animation: gap 4s;
+}
+
+.animation-3 {
+  animation: gap 6s;
+}
+
+/***Order***/
+.order {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -420,7 +442,7 @@ h1 {
   padding: 40px 0px;
   background-color: #f6f6f6;
 }
-.entries .order button {
+.order button {
   background: linear-gradient(#9356DC, #FF79DA);
   width: 186px;
   height: 50px;
@@ -430,7 +452,7 @@ h1 {
   cursor: pointer;
   transition: all 2000ms;
 }
-.entries .order button:hover {
+.order button:hover {
   opacity: 0.5;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.95);
   transition-duration: 1000ms;
