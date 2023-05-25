@@ -38,6 +38,7 @@ h1 {
   font-weight: 300;
   line-height: 34px;
   margin-bottom: 3px;
+  font-size: 30px;
 }
 
 /***Nav***/
@@ -249,47 +250,79 @@ h1 {
 }
 
 /***Page menu***/
-header img {
-  max-width: 100%;
-  object-fit: cover;
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 63px;
+  margin: 0;
+}
+.header h1 {
+  display: flex;
+  font-family: "Shrikhand", cursive;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  box-shadow: none;
+  font-size: 45px;
+}
+.header .mon_ancre {
+  color: black;
+  padding-left: 24px;
+}
+.header .fa-solid {
+  font-size: 39px;
+}
+.header .main-menu {
+  padding: 0;
 }
 
-main {
-  padding: 5px;
+.img-menu {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  width: 100%;
+  height: 335px;
   position: relative;
 }
-main .resto-main {
+.img-menu img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+.img-menu .resto-main {
   margin-top: -44px;
   border-radius: 35px 35px 0 0;
   background: #f7f7f7;
 }
-main h4 {
+.img-menu h4 {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
   font-style: italic;
   line-height: 40px;
   font-weight: 400;
-  padding-top: 37px;
-  margin-top: -46px;
-  padding-left: 14px;
+  padding-left: 28px;
+  margin-bottom: 0;
 }
-main i {
+.img-menu i {
   font-size: 30px;
   position: absolute;
   right: 45px;
   top: 21px;
 }
-main .far {
+.img-menu .far {
   color: black;
 }
-main .fas {
+.img-menu .fas {
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
 }
-main:hover .fas {
+.img-menu:hover .fas {
   opacity: 1;
 }
 
@@ -311,6 +344,7 @@ main:hover .fas {
   font-size: 18px;
   text-transform: uppercase;
   position: relative;
+  margin-top: 0px;
 }
 .entries .menu-entries h3::after {
   content: "";
