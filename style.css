@@ -18,8 +18,7 @@ html, body {
 h2 {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
-  margin-top: 23px;
-  padding-bottom: 58px;
+  padding-bottom: 26px;
   padding-left: 14px;
 }
 
@@ -60,6 +59,7 @@ h1 {
   border: transparent;
   font-family: "Roboto", sans-serif;
   text-align: center;
+  font-size: 18px;
 }
 
 /***Info***/
@@ -75,22 +75,25 @@ h1 {
   margin-top: 1px;
   margin-bottom: 0px;
   padding-bottom: 15px;
+  font-size: 24px;
 }
 .info p {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   margin-top: 0px;
 }
 .info .button {
   background: linear-gradient(to top, #9356DC, #FF79DA);
+  border: none;
   border-radius: 25px;
   color: #ffffff;
-  margin-top: 0px;
-  margin-bottom: 39px;
-  padding: 13px 13px 18px 18px;
+  cursor: pointer;
+  transition: all 2000ms;
 }
 .info .button:hover {
   opacity: 0.5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.95);
+  transition-duration: 1000ms;
 }
 
 /***Main***/
@@ -107,12 +110,13 @@ h1 {
 }
 .fonctionnement li {
   background-color: #F6f6f6;
-  padding: 13px 64px;
+  padding: 29px 38px;
   border-radius: 20px;
   flex-grow: 1;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   list-style: none;
   position: relative;
+  font-size: 22px;
 }
 .fonctionnement li::before {
   content: counter(numbers);
@@ -195,13 +199,14 @@ h1 {
   position: relative;
 }
 .card-description a {
-  font-size: 18px;
+  font-size: 23px;
   font-family: "Roboto", sans-serif;
   color: black;
   margin-bottom: 4px;
+  font-weight: 700;
 }
 .card-description p {
-  font-size: 17px;
+  font-size: 24px;
   font-family: "Roboto", sans-serif;
   color: black;
   margin-bottom: 8px;
@@ -366,50 +371,65 @@ h1 {
   overflow: hidden;
   cursor: pointer;
 }
-.card .card-subtitle {
+
+.card-subtitle {
   display: flex;
   flex-direction: column;
   overflow: hidden;
   margin-left: 15px;
 }
-.card .card-subtitle .price {
-  margin-left: auto;
-  font-weight: 700;
-  padding-right: 25px;
-}
-.card .card-subtitle .icon-check {
-  background-color: #99E2D0;
-  margin-right: -34px;
-  border-radius: 0px 16px 16px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card .card-subtitle .icon-check .fa-solid {
+.card-subtitle .fa-solid {
   color: #99E2D0;
   position: initial;
   background-color: #ffffff;
   font-size: 20px;
 }
-.card .card-subtitle:hover .icon-check {
-  margin-right: 18px;
-  width: 81px;
-  height: 69px;
-  transition: margin-right 1s;
-  margin-right: -2px;
+
+.card:active .icon-check {
+  margin-right: 0;
 }
-.card .card-subtitle h4 {
+
+h4 {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   margin-bottom: 0px;
 }
-.card .card-subtitle p {
+
+p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 15px;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  display: flex;
+  align-items: end;
+  height: 40px;
+  padding-right: 25px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.icon-check {
+  flex-shrink: 0;
+  font-size: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  width: 59px;
+  height: 69px;
+  border-radius: 0px 16px 16px 0px;
 }
 
 /***Animation***/
