@@ -410,8 +410,11 @@ h1 {
   font-size: 20px;
 }
 
-.card:active .icon-check {
+.card:hover .icon-check {
   margin-right: 0;
+  transition-duration: 0.8s;
+  transition-property: transform;
+  transform: rotate(360deg);
 }
 
 h4 {
@@ -437,7 +440,7 @@ p {
   display: flex;
   align-items: end;
   height: 40px;
-  padding-right: 25px;
+  padding-right: 19px;
   margin: 0;
   font-weight: 700;
   font-size: 15px;
@@ -455,8 +458,21 @@ p {
   width: 59px;
   height: 69px;
   border-radius: 0px 16px 16px 0px;
+  margin-right: -5rem;
+  transition: margin-right 2.5s;
+}
+.icon-check .i {
+  animation: quaterspin 1s ease;
 }
 
+@keyframes quaterespin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 /***Animation***/
 @keyframes gap {
   0% {
