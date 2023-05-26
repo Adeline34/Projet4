@@ -92,6 +92,7 @@ main{
         font-size: 14px;
         font-weight: 300;
         margin-top: 0px;
+        margin-bottom: 35px;
     }
 
     .button{
@@ -101,6 +102,7 @@ main{
         color: #ffffff;
         cursor: pointer;
         transition: all 2000ms;
+        padding: 16px 16px 16px 16px;
     }
 
     & .button:hover{
@@ -169,7 +171,7 @@ main{
 
     .Restaurants{
         background-color: #f7f7f7;
-        padding-top: 50px ;
+        padding-top: 28px ;
         margin-top: 50px;
 
         h2{
@@ -234,17 +236,34 @@ main{
                 margin-top: 0px;
                 font-weight: 300;
             }
+          }
+
+          .heart{
             i{
-                font-size: 30px;
+                font-size: 2rem;
                 position: absolute;
-                right: 16px;
-                top: 2px;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
             }
 
-         &:hover{
+            .far{
+                color: black;
+            }
+
+            .fas{
+                color: transparent;
+                background-image: linear-gradient($primary-color,$secondary-color);
+                background-clip: text;
+                -webkit-background-clip: text;
+                opacity: 0;
+            }
+
+            .fas:hover{
                 opacity: 1;
             }
           }
+           
 /***Footer***/
     .footer{
         background-color: #353535;
@@ -255,7 +274,6 @@ main{
             font-style: italic;
             font-weight: 400;
             padding: 23px;
-            margin-top: 6px;
         }
 
         .down{
@@ -267,14 +285,21 @@ main{
                 padding-left: 0px;
             }
             a{
+                display: flex;
+                flex-direction: row;
+                gap: 11px;
                 color: #ffffff;
                 font-family: $secondary-font;
                 font-size: 16px;
-                padding: 23px;
+                margin-left: 28px;
             }  
 
             li{
                 padding-bottom: 7px;
+            }
+
+            .i{
+                padding: 28px;
             }
         }
     }
@@ -342,11 +367,18 @@ main{
             padding-left: 28px;
             margin-bottom: 0;
         }
+
+        .heart{
+            position: relative;
             i{
-            font-size: 30px;
+            font-size: 2rem;
             position: absolute;
-            right: 45px;
-            top: 21px;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-top: -21px;
+            right: 38px;
+                }
         }
             .far{
             color: black;
@@ -358,7 +390,7 @@ main{
             -webkit-background-clip: text;
             opacity: 0;
         }
-            &:hover .fas{
+            .fas:hover{
             opacity: 1;
         }
     }
@@ -472,13 +504,13 @@ main{
         }
     }
     .animation-1{
-    animation: gap 2s;
+    animation: gap 1s;
     }
     .animation-2{
-    animation: gap 4s;
+    animation: gap 8s;
     }
     .animation-3{
-    animation: gap 6s;
+    animation: gap 12s;
     }
 
 /***Order***/
