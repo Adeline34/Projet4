@@ -343,7 +343,7 @@ main{
         .img-menu{
             img{
             width: 100%;
-            height: 275px;
+            height: 304px;
             object-fit: cover;
         }
             display: flex;
@@ -365,7 +365,7 @@ main{
             line-height: 40px;
             font-weight: 400;
             padding-left: 28px;
-            margin-bottom: 0;
+            margin-bottom: -8px;
         }
 
         .heart{
@@ -452,9 +452,6 @@ main{
             
                 .card:hover .icon-check{
                     margin-right: 0;
-                    transition-duration: 0.8s;
-                    transition-property: transform;
-                    transform: rotate(360deg);
                 }
             h4{
                 font-size: 18px;
@@ -501,6 +498,12 @@ main{
                 
                 .i{
                 animation: quaterspin 1s ease;
+            }
+
+            &:hover .fa-solid{
+                transition-duration: 0.8s;
+                transition-property: transform;
+                transform: rotate(360deg);
             }
             }
 

@@ -315,7 +315,7 @@ h1 {
 }
 .img-menu img {
   width: 100%;
-  height: 275px;
+  height: 304px;
   object-fit: cover;
 }
 .img-menu .resto-main {
@@ -330,7 +330,7 @@ h1 {
   line-height: 40px;
   font-weight: 400;
   padding-left: 28px;
-  margin-bottom: 0;
+  margin-bottom: -8px;
 }
 .img-menu .heart {
   position: relative;
@@ -412,9 +412,6 @@ h1 {
 
 .card:hover .icon-check {
   margin-right: 0;
-  transition-duration: 0.8s;
-  transition-property: transform;
-  transform: rotate(360deg);
 }
 
 h4 {
@@ -463,6 +460,11 @@ p {
 }
 .icon-check .i {
   animation: quaterspin 1s ease;
+}
+.icon-check:hover .fa-solid {
+  transition-duration: 0.8s;
+  transition-property: transform;
+  transform: rotate(360deg);
 }
 
 @keyframes quaterespin {
