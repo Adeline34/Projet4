@@ -485,15 +485,15 @@ p {
   }
 }
 .animation-1 {
-  animation: gap 1s;
+  animation: gap 2s;
 }
 
 .animation-2 {
-  animation: gap 8s;
+  animation: gap 4s;
 }
 
 .animation-3 {
-  animation: gap 12s;
+  animation: gap 6s;
 }
 
 /***Order***/
@@ -525,6 +525,9 @@ p {
 /***MédiaQuéries***/
 @media (min-width: 1400px) {
   /***Header***/
+  main {
+    padding: 0;
+  }
   h1 {
     padding: 10px;
   }
@@ -551,11 +554,18 @@ p {
     width: 70%;
   }
   .menu-dessert {
-    width: 70%;
+    width: 100%;
   }
   .order {
     width: 75%;
     margin-left: 193px;
+  }
+  /***Restaurants**/
+  .Restaurants .menus {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 84px;
+    padding-left: 45px;
   }
   /**Footer**/
   .footer .down {
