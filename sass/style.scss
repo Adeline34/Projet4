@@ -562,5 +562,65 @@ main{
 }
     
 
+/***MédiaQuéries***/
         
+@media (min-width: 1400px) {
+    /***Header***/
+    h1{
+        padding: 10px;
+    }
+
+    .fonctionnement ol{
+        flex-direction: row;
+    }
+
+    /**Main**/
+    .img-menu .resto-main{
+        width: 75%;
+        margin-left: 193px;
+    }
+
+    .entries{
+        padding-left: 14px;
+        margin-left: 193px;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        align-items: center;
+    }
+
+    .menu-entries{
+        width: 70%;
+    }
+
+    .menu-flat{
+        width: 70%;
+    }
+
+    .menu-dessert{
+        width: 70%;
+    }
+
+    .order{
+        width: 75%;
+        margin-left: 193px;
+    }
+    /**Footer**/
+
+    .footer .down{
+        display: flex;
+        flex-direction: row-reverse;
+
+        & ul{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .footer{
+        padding-left: 60px;
+    }
+    
+}
+    
+
 /*# sourceMappingURL=style.css.map */
