@@ -93,10 +93,6 @@ h2 {
   padding-left: 14px;
 }
 
-main {
-  padding: 0 20px;
-}
-
 /***Header***/
 h1 {
   font-family: "Shrikhand", cursive;
@@ -239,10 +235,14 @@ h1 {
   gap: 32px;
   width: 100%;
   flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .Restaurants .menus .new {
   position: relative;
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .Restaurants .menus .new:before {
   content: "Nouveau";

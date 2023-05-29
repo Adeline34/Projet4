@@ -102,10 +102,6 @@ h2{
     padding-bottom: 26px;
     padding-left: 14px;
     }
-
-main{
-    padding: 0 20px;
-}
 /***Header***/
     h1{
         font-family:$main-font;
@@ -255,10 +251,14 @@ main{
             gap: 32px;
             width: 100%;
             flex-direction: column;
+            padding-left: 10px;
+            padding-right: 10px;
 
             .new{
                 position: relative;
                 width: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
             }
             .new:before{
                 content: "Nouveau";
@@ -568,14 +568,13 @@ main{
                 
                 .i{
                 animation: quaterspin 1s ease;
-            }
-
+                 }
             &:hover .fa-solid{
                 transition-duration: 0.8s;
                 transition-property: transform;
                 transform: rotate(360deg);
             }
-            }
+           }
 
             @keyframes quaterespin {
                 0%{
