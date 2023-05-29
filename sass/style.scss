@@ -643,11 +643,20 @@ main{
     h1{
         padding: 10px;
     }
-
+    
     .fonctionnement ol{
         flex-direction: row;
     }
+    
+    .img-menu .heart i{
+            right: 299px;
+            margin-top: -12px;
+    }
 
+    .img-menu h4{
+        display: flex;
+        justify-content: center;
+    }
     /**Main**/
     .img-menu .resto-main{
         width: 75%;
