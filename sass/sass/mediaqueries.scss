@@ -1,0 +1,80 @@
+/***MédiaQuéries***/
+        
+@media (min-width: 1400px) {
+    /***Header***/
+    main{
+        padding: 0;
+    }
+
+    h1{
+        padding: 10px;
+    }
+    
+    .fonctionnement ol{
+        flex-direction: row;
+    }
+    
+    .img-menu .heart i{
+            right: 299px;
+            margin-top: -12px;
+    }
+
+    .img-menu h4{
+        display: flex;
+        justify-content: center;
+    }
+    /**Main**/
+    .img-menu .resto-main{
+        width: 75%;
+        margin-left: 193px;
+    }
+
+    .entries{
+        padding-left: 14px;
+        margin-left: 193px;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        align-items: center;
+    }
+
+    .menu-entries{
+        width: 70%;
+    }
+
+    .menu-flat{
+        width: 70%;
+    }
+
+    .menu-dessert{
+        width: 100%;
+    }
+
+    .order{
+        width: 75%;
+        margin-left: 193px;
+    }
+
+    /***Restaurants**/
+    .Restaurants .menus{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        gap: 84px;
+        padding-left: 45px;
+    }
+    /**Footer**/
+
+    .footer .down{
+        display: flex;
+        flex-direction: row-reverse;
+
+        & ul{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .footer{
+        padding-left: 60px;
+    }
+    
+}

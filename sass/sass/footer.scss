@@ -1,0 +1,38 @@
+.footer{
+    background-color: #353535;
+
+    h2{
+        font-size: 18px;
+        font-family: $main-font;
+        font-style: italic;
+        font-weight: 400;
+        padding: 23px;
+    }
+
+    .down{
+        font-family:$secondary-font;
+        color: #ffffff;
+        font-size: 16px;
+
+        ul{
+            padding-left: 0px;
+        }
+        a{
+            display: flex;
+            flex-direction: row;
+            gap: 11px;
+            color: #ffffff;
+            font-family: $secondary-font;
+            font-size: 16px;
+            margin-left: 28px;
+        }  
+
+        li{
+            padding-bottom: 7px;
+        }
+
+        .i{
+            padding: 28px;
+        }
+    }
+}

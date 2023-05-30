@@ -1,0 +1,69 @@
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.7;
+    animation: remove 200ms 3s;
+    animation-fill-mode: forwards;
+    .title-logo{
+        position: absolute;
+        font-family: $main-font;
+        font-size: 30px;
+        color: transparent;
+        background-image: linear-gradient($secondary-color,$primary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        margin: 0;
+    }
+    &::after{
+        content: '';
+        animation: spin 3s infinite linear;
+        height: 100px;
+        width: 100px;
+        border-top: 5px solid $tertiary-color;
+        border-right: 5px solid transparent;
+        border-radius: 50%;
+
+    }
+  }
+    .a::after{
+        content:'';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid $secondary-color;
+        border-radius: 50%;
+        animation: spin 3s infinite linear;
+    }
+
+    .b::after{
+        content:'';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border-right: 15px solid transparent;
+        border-top: 15px solid $primary-color;
+        animation: spin 3s infinite linear;
+    }
+  @keyframes remove {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+    }
+  }
+
+  @keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+    
+  }
