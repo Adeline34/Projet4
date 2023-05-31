@@ -5,6 +5,7 @@
 @import "./sass/mediaqueries.scss";
 @import "./sass/base.scss";
 @import "./sass/pagemenu.scss";
+@import "./sass/mixin.scss";
 
 
 
@@ -139,7 +140,7 @@
             padding: 29px 38px;
             border-radius: 20px;
             flex-grow: 1;
-            box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+            @include box-shadow;
             list-style: none;
             position: relative;
             font-size: 14px;
@@ -183,6 +184,7 @@
             flex-direction: column;
             padding-left: 10px;
             padding-right: 10px;
+            padding-bottom: 66px;
 
             .new{
                 position: relative;
@@ -211,6 +213,7 @@
             background: #ffffff;
             border-radius: 15px;
             box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+            height: 310px;
         img{
             object-fit: cover;
             width: 100%;
@@ -222,6 +225,7 @@
 
         .card-description{
             position: relative;
+            padding-top: 10px;
             a{
                 font-size: 18px;
                 font-family: $secondary-font;
