@@ -1,5 +1,5 @@
 .footer{
-    background-color: #353535;
+    background-color: $thirteenth-color;
 
     h2{
         font-size: 18px;
@@ -15,7 +15,7 @@
 
     .down{
         font-family:$secondary-font;
-        color: #ffffff;
+        color: $tenth-color;
         font-size: 16px;
 
         ul{
@@ -25,7 +25,7 @@
             display: flex;
             flex-direction: row;
             gap: 11px;
-            color: #ffffff;
+            color: $tenth-color;
             font-family: $secondary-font;
             font-size: 16px;
             margin-left: 28px;
