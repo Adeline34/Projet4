@@ -195,17 +195,24 @@
             border-radius: 0px 16px 16px 0px;
             margin-right: -5rem;
             transition: margin-right 2.5s;
+            i{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+            }
             }
             
-        & :hover {
+        .card:hover {
             .icon-check{
             margin-right: 0;
-        }
+        
         i{
-            animation: quaterspin 3s ease;
+            animation: quaterspin 3s ease-in-out;
         }
         }
-    
+    }
         @keyframes quaterspin {
             0%{
             transform: rotate(-270deg);
