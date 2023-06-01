@@ -20,7 +20,7 @@
 
     h1{
         font-family:$main-font;
-        @include header-h1;
+        @include box-shadow;
         text-align: center;
         padding: 5px;
         position: relative;
