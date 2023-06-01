@@ -20,7 +20,7 @@
 
     h1{
         font-family:$main-font;
-        box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+        @include header-h1;
         text-align: center;
         padding: 5px;
         position: relative;
@@ -40,7 +40,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #Eaeaea;
+        background-color: $eighth-color;
         padding: 25px;
         text-align: center;
 
@@ -52,7 +52,7 @@
     }
     
     #input{
-        background-color: #Eaeaea;
+        background-color: $eighth-color;
         border: transparent;
         font-family: $secondary-font;
         text-align: center;
@@ -64,7 +64,7 @@
 
     .info{
         text-align: center;
-        background-color: #f7f7f7;
+        background-color: $ninth-color;
         padding-bottom: 37px;
         margin-top: 0;
         margin-bottom: 30px;
@@ -91,13 +91,13 @@
         cursor: pointer;
         transition: all 2000ms;
         padding: 16px 16px 16px 16px;
-        background: linear-gradient(352.33deg,$primary-color -11.44%, $secondary-color 123.93%);
-        box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+        @include button;
+        @include box-shadow;
     }
 
     & .button:hover{
         opacity: 0.5;
-        box-shadow: 0px 4px 10px rgba(0,0,0,0.95);
+        @include button-hover;
         transition-duration: 1000ms;
     }
 }
@@ -106,7 +106,7 @@
 
     .fonctionnement{
         counter-reset: numbers;
-        background-color: #ffffff;
+        background-color: $tenth-color;
         ol{
             display: flex;
             flex-direction: column;
@@ -124,7 +124,7 @@
             &::before{
                 content: counter(numbers);
                 counter-increment: numbers;
-                color: #ffffff;
+                color: $tenth-color;
                 background-color: $primary-color;
                 border-radius: 50%;
                 width: 1.5rem;
@@ -136,17 +136,17 @@
                 left: -5px;
             }
 
-            background-color: #F6f6f6;
+            background-color: $elevent-color;
             padding: 29px 38px;
             border-radius: 20px;
             flex-grow: 1;
-            @include box-shadow;
+            @include li;
             list-style: none;
             position: relative;
             font-size: 14px;
 
             .i{
-                color: #7e7e7e;
+                color: $twelfth-color;
                 margin-right: 23px;
                 font-size: 18px;
                 left: 32px;
@@ -154,7 +154,7 @@
             }
             .fa-solid{
                 font-size: 18px;
-                color: #7e7e7e;
+                color: $twelfth-color;
                 padding-right: 20px;
             }
             .fa-store{
@@ -167,7 +167,7 @@
 /***Menus***/
 
     .Restaurants{
-        background-color: #f7f7f7;
+        background-color: $ninth-color;
         padding-top: 28px ;
         margin-top: 50px;
 
@@ -210,9 +210,9 @@
 
         .menucard{
             width: 100%;
-            background: #ffffff;
+            background: $tenth-color;
             border-radius: 15px;
-            box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+            @include map;
             height: 310px;
         img{
             object-fit: cover;
@@ -229,7 +229,7 @@
             a{
                 font-size: 18px;
                 font-family: $secondary-font;
-                color: black;
+                color: $fourth-color;
                 margin-bottom: 4px;
                 font-weight: 700;
                 padding-left: 13px;
@@ -237,7 +237,7 @@
             p{
                 font-size: 17px;
                 font-family: $secondary-font;
-                color: black;
+                color: $fourth-color;
                 margin-bottom: 52px;
                 padding-top: 4px;
                 margin-top: 0px;
@@ -256,7 +256,7 @@
             }
 
             .far{
-                color: black;
+                color: $six-color;
             }
 
             .fas{
