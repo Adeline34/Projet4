@@ -95,7 +95,7 @@
     }
 }
 
-/***Entries***/
+/***Entries-Flat-Dessert***/
         .entries{
         padding-left: 14px;
         padding-right: 14px;
@@ -121,7 +121,65 @@
                 position: absolute;
             }
         }
-    }
+        
+        }
+            .menu-flat{
+                padding-left: 14px;
+                padding-right: 14px;
+                background-color: $ninth-color;
+
+                h3{
+                    padding-left: 14px;
+                    padding-top: 42px;
+                    font-weight: 300;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    position: relative;
+                    margin-top: 0px;
+                    color: $fourth-color;
+
+                 &::after{
+                    content: "";
+                    width: 43px;
+                    top: 66px;
+                    height: 4px;
+                    left: 15px;
+                    background-color: $tertiary-color;
+                    position: absolute;
+        }
+}
+            }
+
+            .menu-dessert{
+                padding-left: 14px;
+                padding-right: 14px;
+                background-color: $ninth-color;
+
+                h3{
+                    padding-left: 14px;
+                    padding-top: 42px;
+                    font-weight: 300;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    position: relative;
+                    margin-top: 0px;
+                    color: $fourth-color;
+
+                 &::after{
+                    content: "";
+                    width: 43px;
+                    top: 66px;
+                    height: 4px;
+                    left: 15px;
+                    background-color: $tertiary-color;
+                    position: absolute;
+        }
+}
+            }
+
+
+
+            /***Card****/
 
     .card{
         border-radius: 15px 15px 15px 15px;

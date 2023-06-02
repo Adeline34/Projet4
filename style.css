@@ -279,7 +279,7 @@ html, body {
   opacity: 1;
 }
 
-/***Entries***/
+/***Entries-Flat-Dessert***/
 .entries {
   padding-left: 14px;
   padding-right: 14px;
@@ -305,6 +305,57 @@ html, body {
   position: absolute;
 }
 
+.menu-flat {
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: #F7f7f7;
+}
+.menu-flat h3 {
+  padding-left: 14px;
+  padding-top: 42px;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 0px;
+  color: #000000;
+}
+.menu-flat h3::after {
+  content: "";
+  width: 43px;
+  top: 66px;
+  height: 4px;
+  left: 15px;
+  background-color: #99E2D0;
+  position: absolute;
+}
+
+.menu-dessert {
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: #F7f7f7;
+}
+.menu-dessert h3 {
+  padding-left: 14px;
+  padding-top: 42px;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 0px;
+  color: #000000;
+}
+.menu-dessert h3::after {
+  content: "";
+  width: 43px;
+  top: 66px;
+  height: 4px;
+  left: 15px;
+  background-color: #99E2D0;
+  position: absolute;
+}
+
+/***Card****/
 .card {
   border-radius: 15px 15px 15px 15px;
   width: 100%;
@@ -686,3 +737,4 @@ h1 {
   opacity: 1;
 }
 
+/*# sourceMappingURL=style.css.map */
