@@ -156,13 +156,10 @@
 }
             }
 
-
-
             /***Card****/
 
     .card{
         border-radius: 15px 15px 15px 15px;
-        width: 100%;
         height: 69px;
         background-color: $tenth-color;
         margin-top: 12px;
@@ -287,7 +284,6 @@ animation: gap 6s;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            width: 100%;
             padding: 40px 0px;
             background-color: $elevent-color;
         button{

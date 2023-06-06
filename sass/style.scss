@@ -90,9 +90,7 @@
     }
 
     & .button:hover{
-        opacity: 0.5;
         @include button-hover;
-        transition-duration: 1000ms;
     }
 }
 
