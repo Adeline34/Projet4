@@ -3,11 +3,19 @@
 }
 
 @mixin button{
-background: linear-gradient(352.33deg,$primary-color -11.44%, $secondary-color 123.93%);
+    border: none;
+    border-radius: 25px;
+    color: $tenth-color;
+    cursor: pointer;
+    transition: all 2000ms;
+    padding: 16px 16px 16px 16px;
+    background: linear-gradient(352.33deg,$primary-color -11.44%, $secondary-color 123.93%);
 }
 
 @mixin button-hover{
 box-shadow: 0px 4px 10px rgba(0,0,0,0.95);
+transition-duration: 1000ms;
+opacity: 0.5;
 }
 
 @mixin map{
@@ -16,4 +24,15 @@ box-shadow: 0px 4px 10px rgba(0,0,0,0.95);
 
 @mixin box-shadow{
 box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+}
+
+@mixin h3{
+    padding-left: 14px;
+    padding-top: 42px;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 0px;
+    color: $fourth-color;
 }
