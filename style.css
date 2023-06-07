@@ -108,6 +108,31 @@
 
 /***MédiaQuéries***/
 @media (min-width: 1400px) {
+  /***Page d'accueil***/
+  /***Main***/
+  main .fonctionnement h2 {
+    padding-left: 180px;
+  }
+  main .fonctionnement ol {
+    display: flex;
+    flex-direction: row;
+    padding-left: 180px;
+    padding-right: 207px;
+  }
+  /***Restaurants***/
+  main .Restaurants h2 {
+    padding-left: 175px;
+    padding-bottom: 0px;
+  }
+  main .Restaurants .menus {
+    display: grid;
+    row-gap: 60px;
+    column-gap: 90px;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+  /***Page menu***/
   /***Header***/
   main {
     padding: 0;
@@ -122,6 +147,10 @@
     right: 299px;
     margin-top: -12px;
   }
+  .img-menu .heart {
+    margin-right: 227px;
+    margin-top: 11px;
+  }
   .img-menu h4 {
     display: flex;
     justify-content: center;
@@ -130,6 +159,7 @@
   .img-menu .resto-main {
     width: 75%;
     margin-left: 193px;
+    padding-right: 116px;
   }
   .entries {
     margin-left: 193px;
@@ -168,13 +198,6 @@
   .order {
     width: 75%;
     margin-left: 193px;
-  }
-  /***Restaurants**/
-  .Restaurants .menus {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    gap: 84px;
-    padding-left: 45px;
   }
   /**Footer**/
   .footer .down {
