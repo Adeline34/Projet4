@@ -156,6 +156,23 @@
 }
             }
 
+            /***Animation***/
+            @keyframes gap {
+                0%{
+                    transform: translateX(50%);
+                    opacity: 0;
+                    height: 0;
+                }
+            }
+            .animation-1{
+            animation: gap 2s;
+            }
+            .animation-2{
+            animation: gap 4s;
+            }
+            .animation-3{
+            animation: gap 6s;
+            }
             /***Card****/
 
     .card{
@@ -259,25 +276,6 @@
             }
         }
       
-       
-/***Animation***/
-@keyframes gap {
-    0%{
-        transform: translateX(50%);
-        opacity: 0;
-        height: 0;
-    }
-}
-.animation-1{
-animation: gap 2s;
-}
-.animation-2{
-animation: gap 4s;
-}
-.animation-3{
-animation: gap 6s;
-}
-
 /***Order***/
         .order{
             display: flex;
